@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Grocery Cart Project</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+        <ul>
+          <li><a href="#">First Link</a></li>
+          <li><a href="#">Second Link</a></li>
+          <li><a href="#">Third Link</a></li>
+        </ul>
+      </nav>
+
+      <div class="shopping-cart">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          enable-background="new 0 0 24 24"
+          height="24px"
+          viewBox="0 0 24 24"
+          width="35px"
+          fill="#000000"
+          id="icon"
+        >
+          <g>
+            <rect fill="none" height="24" width="35" />
+            <path
+              d="M18,6h-2c0-2.21-1.79-4-4-4S8,3.79,8,6H6C4.9,6,4,6.9,4,8v12c0,1.1,0.9,2,2,2h12c1.1,0,2-0.9,2-2V8C20,6.9,19.1,6,18,6z M12,4c1.1,0,2,0.9,2,2h-4C10,4.9,10.9,4,12,4z M18,20H6V8h2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V8h4v2c0,0.55,0.45,1,1,1s1-0.45,1-1V8 h2V20z"
+            />
+          </g>
+        </svg>
+        <p id="numberOfItems">0</p>
+
+        <div id="dropdown-content" class="dropdown-class">
+          <div class="header">
+            <h2>Item Cart</h2>
+          </div>
+          <div class="cart">
+            <div class="item-container">
+              <!-- <div class="item">
+                <h3>Item 1</h3>
+                <p class="price">3$</p>
+                <span class="material-icons" data-action="remove">close</span>
+              </div>
+
+              <div class="item">
+                <h3>Item 1</h3>
+                <p class="price">3$</p>
+                <span class="material-icons" data-action="remove">close</span>
+              </div>
+            </div> -->
+
+            
+          </div>
+          <button id="clear" data-action="clear">Clear</button>
+          <button id="checkout" data-action="checkout">Checkout</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <h2>Welcome to Item Selection</h2>
+      <section>
+        <div class="box-container">
+          <h4>Item 1</h4>
+          <img src="Images/Resource_Orange.webp" alt="resource" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+            inventore.
+          </p>
+          <div class="random-price">
+            <p class="priceText">Price:</p>
+            <p class="priceNumber">0</p>
+          </div>
+          <button data-action="add">Add to cart!</button>
+        </div>
+
+        <div class="box-container">
+          <h4>Item 2</h4>
+          <img src="Images/Resource_Orange.webp" alt="resource" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+            inventore.
+          </p>
+          <div class="random-price">
+            <p class="priceText">Price:</p>
+            <p class="priceNumber">0</p>
+          </div>
+          <button data-action="add">Add to cart!</button>
+        </div>
+
+        <div class="box-container">
+          <h4>Item 3</h4>
+          <img src="Images/Resource_Orange.webp" alt="resource" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+            inventore.
+          </p>
+          <div class="random-price">
+            <p class="priceText">Price:</p>
+            <p class="priceNumber">0</p>
+          </div>
+          <button data-action="add">Add to cart!</button>
+        </div>
+
+        <div class="box-container">
+          <h4>Item 4</h4>
+          <img src="Images/Resource_Orange.webp" alt="resource" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+            inventore.
+          </p>
+          <div class="random-price">
+            <p class="priceText">Price:</p>
+            <p class="priceNumber">0</p>
+          </div>
+          <button data-action="add">Add to cart!</button>
+        </div>
+
+        <div class="box-container">
+          <h4>Item 5</h4>
+          <img src="Images/Resource_Orange.webp" alt="resource" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+            inventore.
+          </p>
+          <div class="random-price">
+            <p class="priceText">Price:</p>
+            <p class="priceNumber">0</p>
+          </div>
+          <button data-action="add">Add to cart!</button>
+        </div>
+
+        <div class="box-container">
+          <h4>Item 6</h4>
+          <img src="Images/Resource_Orange.webp" alt="resource" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+            inventore.
+          </p>
+          <div class="random-price">
+            <p class="priceText">Price:</p>
+            <p class="priceNumber">0</p>
+          </div>
+          <button data-action="add">Add to cart!</button>
+        </div>
+
+        <div class="box-container">
+          <h4>Item 7</h4>
+          <img src="Images/Resource_Orange.webp" alt="resource" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+            inventore.
+          </p>
+          <div class="random-price">
+            <p class="priceText">Price:</p>
+            <p class="priceNumber">0</p>
+          </div>
+          <button data-action="add">Add to cart!</button>
+        </div>
+
+        <div class="box-container">
+          <h4>Item 8</h4>
+          <img src="Images/Resource_Orange.webp" alt="resource" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+            inventore.
+          </p>
+          <div class="random-price">
+            <p class="priceText">Price:</p>
+            <p class="priceNumber">0</p>
+          </div>
+          <button data-action="add">Add to cart!</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
